@@ -1,14 +1,26 @@
-﻿body {
+﻿html {
+    font-size: 18px !important;
+}
+body {
     padding-top: 50px;
     padding-bottom: 20px;
-}
-
-/* Set padding to keep content from hitting the edges */
+    font-family: 'PT Serif', serif;
+    font-size: 1rem !important;
+}/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
+ol > li, ul > li{
+    padding: 0.5rem 0;
+}
+
+.navbar-brand{
+    font-size:1.25rem;
+    margin:0;
+    padding:1.25rem;
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */

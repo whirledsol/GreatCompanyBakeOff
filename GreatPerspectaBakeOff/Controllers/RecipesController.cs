@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Newtonsoft.Json;
 
 namespace GreatPerspectaBakeOff.Controllers
 {
-    public class HomeController : Controller
+    public class RecipesController : Controller
     {
+        public RecipesController()
+        {
+        }
 
         public ActionResult Index()
         {
-            return RedirectToAction("Instructions");
+            return View();
         }
-
-        public ActionResult Instructions()
+        public ActionResult Detail(int id)
         {
             return View();
         }
